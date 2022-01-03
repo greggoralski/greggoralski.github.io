@@ -1,0 +1,12 @@
+/*Default is desktop*/
+/*Desktop First */
+
+
+@media screen and (max-width: 991px) {
+/*medium (tablet/small laptop)*/
+}
+
+@media screen and (max-width: 479px) {
+/*    small (phone)*/
+
+}
