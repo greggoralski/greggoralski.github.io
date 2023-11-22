@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/background.png'); /* Replace with your background image path */
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+/* centre */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tagline, .cta, a {
+    backdrop-filter: blur(5px);
+    color: #000; /* Change color to increase contrast */
+    margin: 10px 0;
+}
+
+.tagline {
+    font-size: 2.5em;
+}
+
+.cta {
+    font-size: 1.5em;
+}
+
+a {
+    font-size: 1.2em;
+    color: #0d6efd;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    border-color: #0d6efd;
+}
