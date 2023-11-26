@@ -1,46 +1,49 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('../images/background.png'); /* Replace with your background image path */
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    background-attachment: fixed;
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #000; /* fallback color */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-/* centre */
-.hero {
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: url('../images/whale.jpeg') no-repeat center / cover; */
+
+}
+.masked-text {
+    background: url('../images/whale.jpeg') no-repeat center / cover; 
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent; /* This will make the text itself transparent */
+    line-height: 1;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-
+    justify-content: left;
 }
-
-.tagline, .cta, a {
-    backdrop-filter: blur(5px);
-    color: #000; /* Change color to increase contrast */
-    margin: 10px 0;
+.text {
+    font-size: 12rem; /* Adjust size accordingly */
+    font-weight: 700;
+    text-align: right;
 }
-
-.tagline {
-    font-size: 2.5em;
+.inner-text{
+    max-width: 8ch;
+    line-height: 4.8rem;
+    text-align: right;
 }
-
-.cta {
-    font-size: 1.5em;
-}
-
-a {
-    font-size: 1.2em;
-    color: #0d6efd;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    border-color: #0d6efd;
+.not-masked-text {
+    font-size: 6rem; /* Adjust size accordingly */
+    font-weight: 700;
+    background: url('../images/whale.jpeg') no-repeat center / cover; /* Path to your background image */
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* color: transparent; This will make the text itself transparent */
+    /* text-align:left; */
+    line-height: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
