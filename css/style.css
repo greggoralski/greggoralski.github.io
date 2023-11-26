@@ -32,6 +32,8 @@ body, html {
     max-width: 8ch;
     line-height: 4.8rem;
     text-align: right;
+    text-shadow: 0 0 5px #c8c8c8;
+
 }
 .not-masked-text {
     font-size: 6rem; /* Adjust size accordingly */
