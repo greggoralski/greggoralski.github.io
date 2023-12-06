@@ -8,7 +8,6 @@ body, html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* background: url('../images/whale.jpeg') no-repeat center / cover; */
-
 }
 .masked-text {
     background: url('../images/whale.jpeg') no-repeat center / cover; 
