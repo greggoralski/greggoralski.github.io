@@ -1,3 +1,4 @@
+/* style.css */
 body, html {
     height: 100%;
     margin: 0;
@@ -35,16 +36,52 @@ body, html {
 
 }
 .not-masked-text {
-    font-size: 6rem; /* Adjust size accordingly */
+    font-size: 6rem; 
     font-weight: 700;
     background: url('../images/whale.jpeg') no-repeat center / cover; /* Path to your background image */
-    /* -webkit-background-clip: text; */
-    /* background-clip: text; */
-    /* color: transparent; This will make the text itself transparent */
-    /* text-align:left; */
     line-height: 1;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: right;
 }
+.masked-text {
+    background: url('../images/whale.jpeg') no-repeat center / cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .links {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 20vh 5vw;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    border-radius: 5px;
+    background-color: transparent;
+    align-self: flex-end;
+
+  }
+  
+ .links a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    /* color: #fff; */
+    color:rgba(255, 255, 255, 0.489);
+
+  }
+  
+  .links a:hover {
+    color:rgba(255, 255, 255, 0.879);
+  }
+  
